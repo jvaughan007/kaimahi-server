@@ -1,5 +1,4 @@
 const express = require('express');
-const { isWebUri } = require('valid-url');
 const xss = require('xss');
 const logger = require('../logger');
 const LeadsService = require('./leads-service');
@@ -26,17 +25,13 @@ leadsRouter
             .catch(next);
     })
     .post(bodyParser, (req, res, next) => {
-        for (const field of ['name', 'email', 'phone', 'lastContacted', 'accountId']) {
+        for (const field of ['name', 'email', 'phone', 'last_contacted', 'account_id']) {
             if (!req.body[field]) {
                 logger.error(`${field} is required`);
                 return res.status(400).send(`'${field}' is required`);
             }
         }
-        const {name, email, phone, lastContacted, accountId} = req.body;
-
-        const newLead = {name, email, phone, last_contacted: lastContacted, account_id: accountId};
-        console.log(newLead);
-
+        const newLead = req.body;
         LeadsService.insertLead(
             req.app.get('db'),
             newLead
@@ -72,8 +67,13 @@ leadsRouter
     .get((req, res) => {
         res.json(serializeLead(res.lead));
     })
-    .patch((req, res) => {
-        res.json({ message: 'Im patched' });
+    .patch((req, res, next) => {
+        const { lead_id } = req.params;
+        console.log(req.body);
+        LeadsService.updateLead(req.app.get('db'), lead_id, req.body).then((resp) => {
+            logger.info(`Lead with id ${lead_id} updated.`);
+            res.json(resp);
+        }).catch(next);
     })
     .delete((req, res, next) => {
         const { lead_id } = req.params;

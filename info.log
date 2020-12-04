@@ -1,0 +1,42 @@
+{"message":"Lead with id 1 updated.","level":"info"}
+{"message":"Lead with id 1 updated.","level":"info"}
+{"message":"Lead with id 2 updated.","level":"info"}
+{"message":"Lead with id 2 updated.","level":"info"}
+{"message":"Lead with id 2 updated.","level":"info"}
+{"message":"lastContacted is required","level":"error"}
+{"message":"accountId is required","level":"error"}
+{"message":"accountId is required","level":"error"}
+{"message":"Lead with id 11 created","level":"info"}
+{"message":"Lead with id 12 created","level":"info"}
+{"message":"Lead with id 13 created","level":"info"}
+{"message":"Lead with id 3 deleted.","level":"info"}
+{"message":"Lead with id 12 deleted.","level":"info"}
+{"message":"Lead with id 11 deleted.","level":"info"}
+{"message":"Lead with id 14 created","level":"info"}
+{"message":"Lead with id 14 deleted.","level":"info"}
+{"message":"Lead with id 13 deleted.","level":"info"}
+{"message":"Lead with id 15 created","level":"info"}
+{"message":"Lead with id 15 deleted.","level":"info"}
+{"message":"Lead with id 4 updated.","level":"info"}
+{"message":"Lead with id 4 updated.","level":"info"}
+{"message":"Lead with id 5 updated.","level":"info"}
+{"message":"Lead with id 6 updated.","level":"info"}
+{"message":"Lead with id 7 updated.","level":"info"}
+{"message":"Lead with id 8 updated.","level":"info"}
+{"message":"Lead with id 8 updated.","level":"info"}
+{"message":"Lead with id 8 updated.","level":"info"}
+{"message":"Lead with id 8 updated.","level":"info"}
+{"message":"Lead with id 8 updated.","level":"info"}
+{"message":"Lead with id 8 updated.","level":"info"}
+{"message":"Lead with id 8 updated.","level":"info"}
+{"message":"Lead with id 8 updated.","level":"info"}
+{"message":"Lead with id 9 updated.","level":"info"}
+{"message":"Lead with id 10 updated.","level":"info"}
+{"message":"Lead with id 16 created","level":"info"}
+{"message":"Lead with id 16 deleted.","level":"info"}
+{"message":"Lead with id 17 created","level":"info"}
+{"message":"Lead with id 17 deleted.","level":"info"}
+{"message":"Lead with id 18 created","level":"info"}
+{"message":"Lead with id 18 deleted.","level":"info"}
+{"message":"Lead with id 1 updated.","level":"info"}
+{"message":"Lead with id 1 deleted.","level":"info"}
