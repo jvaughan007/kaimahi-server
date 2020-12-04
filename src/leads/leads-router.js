@@ -50,6 +50,7 @@ leadsRouter
 leadsRouter
     .route('/:lead_id')
     .all((req, res, next) => {
+        console.log('pigbenis');
         const { lead_id } = req.params;
         LeadsService.getById(req.app.get('db'), lead_id)
             .then(lead => {

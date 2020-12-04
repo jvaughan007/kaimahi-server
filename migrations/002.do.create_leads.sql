@@ -3,5 +3,5 @@ CREATE TABLE leads (
     name TEXT NOT NULL,
     email TEXT NOT NULL,
     phone TEXT NOT NULL,
-    last_contacted TIMESTAMP(0) NOT NULL 
+    last_contacted TIMESTAMPTZ NOT NULL DEFAULT now()
 );
