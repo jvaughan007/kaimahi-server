@@ -62,3 +62,59 @@
 {"message":"Lead with id 2 updated.","level":"info"}
 {"message":"Lead with id 2 deleted.","level":"info"}
 {"message":"Lead with id 1 created","level":"info"}
+{"message":"Lead with id 1 created","level":"info"}
+{"message":"Lead with id 2 updated.","level":"info"}
+{"message":"Lead with id 2 deleted.","level":"info"}
+{"message":"Lead with id 1 created","level":"info"}
+{"message":"Lead with id 1 created","level":"info"}
+{"message":"email is required","level":"error"}
+{"message":"Lead with id 1 created","level":"info"}
+{"message":"email is required","level":"error"}
+{"message":"Lead with id 1 created","level":"info"}
+{"message":"email is required","level":"error"}
+{"message":"Lead with id 1 created","level":"info"}
+{"message":"email is required","level":"error"}
+{"message":"Lead with id 1 created","level":"info"}
+{"message":"email is required","level":"error"}
+{"message":"Lead with id 1 not found","level":"error"}
+{"message":"Lead with id 1 created","level":"info"}
+{"message":"email is required","level":"error"}
+{"message":"Lead with id 1 created","level":"info"}
+{"message":"email is required","level":"error"}
+{"message":"Lead with id 1 not found","level":"error"}
+{"message":"Lead with id 1 created","level":"info"}
+{"message":"email is required","level":"error"}
+{"message":"Lead with id 2 updated.","level":"info"}
+{"message":"Lead with id 1 created","level":"info"}
+{"message":"email is required","level":"error"}
+{"message":"Lead with id 2 updated.","level":"info"}
+{"message":"Lead with id 1 created","level":"info"}
+{"message":"email is required","level":"error"}
+{"message":"Lead with id 2 updated.","level":"info"}
+{"message":"Lead with id 1 created","level":"info"}
+{"message":"email is required","level":"error"}
+{"message":"Lead with id 2 updated.","level":"info"}
+{"message":"Lead with id 1 created","level":"info"}
+{"message":"email is required","level":"error"}
+{"message":"Lead with id 2 updated.","level":"info"}
+{"message":"Lead with id 2 not found","level":"error"}
+{"message":"Lead with id 1 created","level":"info"}
+{"message":"email is required","level":"error"}
+{"message":"Lead with id 2 updated.","level":"info"}
+{"message":"Lead with id 2 deleted.","level":"info"}
+{"message":"Lead with id 1 created","level":"info"}
+{"message":"email is required","level":"error"}
+{"message":"Lead with id 2 updated.","level":"info"}
+{"message":"Lead with id 2 deleted.","level":"info"}
+{"message":"Lead with id 1 created","level":"info"}
+{"message":"email is required","level":"error"}
+{"message":"Lead with id 2 updated.","level":"info"}
+{"message":"Lead with id 2 deleted.","level":"info"}
+{"message":"Lead with id 1 created","level":"info"}
+{"message":"email is required","level":"error"}
+{"message":"Lead with id 2 updated.","level":"info"}
+{"message":"Lead with id 2 deleted.","level":"info"}
+{"message":"Lead with id 1 created","level":"info"}
+{"message":"email is required","level":"error"}
+{"message":"Lead with id 2 updated.","level":"info"}
+{"message":"Lead with id 2 deleted.","level":"info"}

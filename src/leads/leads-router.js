@@ -20,6 +20,7 @@ leadsRouter
     .get((req, res, next) => {
         LeadsService.getAllLeads(req.app.get('db'))
             .then(leads => {
+                console.log(leads)
                 res.json(leads.map(serializeLead));
             })
             .catch(next);
@@ -73,7 +74,7 @@ leadsRouter
         console.log(req.body);
         LeadsService.updateLead(req.app.get('db'), lead_id, req.body).then((resp) => {
             logger.info(`Lead with id ${lead_id} updated.`);
-            res.json(resp);
+            res.json(serializeLead(resp));
         }).catch(next);
     })
     .delete((req, res, next) => {

@@ -52,7 +52,6 @@ app.get('/', (req, res) => {
 // Am I thinking too much in to this and getting the front end and back end tangled?
 app.post('/login', async (req, res) => {
     const { email, password } = req.body;
-    console.log(req.body)
     if (!email || !password) {
         res.status(422).json({ message: 'Missing information in request' });
     }

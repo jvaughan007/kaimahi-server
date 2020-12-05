@@ -22,7 +22,11 @@ const LeadsService = {
     updateLead(knex, id, newLeadsFields) {
         return knex('leads')
             .where({ id })
-            .update(newLeadsFields);
+            .update(newLeadsFields)
+            .returning('*')
+            .then(rows => {
+                return rows[0];
+            });
     },
 };
 
