@@ -51,7 +51,7 @@ accountsRouter
                 logger.error(`${field} is required`);
                 return res.status(400).send(`'${field}' is required`);
             }
-            if (AccountsService.checkIfUserExists(req.body.email)) {
+            if (AccountsService.checkIfUserExists(req.app.get('db'), req.body)) {
                 logger.error(`Account for ${req.body.email} exists, please log in`);
                 return res.status(401).send(`Account for ${req.body.email} exists, please log in`);
             }
@@ -71,6 +71,6 @@ accountsRouter
             })
             .catch(next);
     });
-    
+
 module.exports = accountsRouter;
     
