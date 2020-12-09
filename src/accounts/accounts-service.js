@@ -1,4 +1,7 @@
 const AccountsService = {
+    getAllAccounts(knex) {
+        return knex.select('*').from('accounts');
+    },
     checkIfUserExists(knex, email) {
         return knex.select('*').from('accounts').where('email', email).first();
     },

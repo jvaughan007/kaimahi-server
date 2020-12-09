@@ -20,7 +20,7 @@ leadsRouter
     .get((req, res, next) => {
         LeadsService.getAllLeads(req.app.get('db'))
             .then(leads => {
-                console.log(leads)
+                console.log(leads);
                 res.json(leads.map(serializeLead));
             })
             .catch(next);
@@ -51,7 +51,7 @@ leadsRouter
 leadsRouter
     .route('/:lead_id')
     .all((req, res, next) => {
-        console.log('pigbenis');
+        console.log('requesting all specific lead info...');
         const { lead_id } = req.params;
         LeadsService.getById(req.app.get('db'), lead_id)
             .then(lead => {
