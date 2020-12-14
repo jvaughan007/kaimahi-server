@@ -44,32 +44,6 @@ accountsRouter
                 res.json(accounts.map(serializeAccount));
             })
             .catch(next);
-    })
-    .post(bodyParser, (req, res, next) => {
-        for (const field of ['name', 'email', 'password']) {
-            if (!req.body[field]) {
-                logger.error(`${field} is required`);
-                return res.status(400).send(`'${field}' is required`);
-            }
-            if (AccountsService.checkIfUserExists(req.app.get('db'), req.body)) {
-                logger.error(`Account for ${req.body.email} exists, please log in`);
-                return res.status(401).send(`Account for ${req.body.email} exists, please log in`);
-            }
-        }
-        const newAccount = req.body;
-        AccountsService.createNewAccount(
-            req.app.get('db'),
-            newAccount
-        )
-            .then(account => {
-                console.log(account);
-                logger.info(`Lead with id ${account.id} created`);
-                res
-                    .status(201)
-                    .location(`/accounts/${account.id}`)
-                    .json(serializeLead(account));
-            })
-            .catch(next);
     });
 
 module.exports = accountsRouter;

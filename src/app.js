@@ -90,9 +90,12 @@ app.post('/signup', (req, res) => {
                 req.session.userInfo = data;
                 req.session.userInfo.refreshToken = refreshToken;
                 res.cookie('authorization', accessToken, {secure: true, httpOnly: true});
-                res.json(data);
+                res.status(200).json(data);
+                console.log(`Created new account for ${data.name}`);
+                
             });
         } else {
+            console.log('try another name/email');
             res.send(400).json({ message: 'User exists, try login' });
         }
     });

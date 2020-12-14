@@ -38,4 +38,20 @@ describe('App', () => {
             .send({ email: testAccounts[0].email, password: testAccounts[0].password  })
             .expect(200)
     });
+
+    it('POST /signup reponds with a 200 ok', async () => {
+        const newAccount = [{email: 'testNew@email.com', password: 'test', name: 'testNewAccount'}]
+        await db.into('accounts').insert()
+        return supertest(app)
+        .post('/signup')
+        .send({email: newAccount[0].email, password: newAccount[0].password, name: newAccount[0].name})
+        .expect(200)
+    })
+
+    it('POST /signout responds with a 204 status', async () => {
+        return supertest(app)
+        .post('/signout')
+        .expect(204)
+    })
+
 });
